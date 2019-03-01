@@ -33,12 +33,12 @@ class GalleryModal extends React.Component {
   }
 
   render() {
-    return(<div className={"portfolio-modal modal fade "+((this.props.isOpen == this.props.number) ? "show" : "")} 
+    return(<div className={"portfolio-modal modal fade "+((this.props.isOpen === this.props.number) ? "show" : "")} 
                 tabIndex="-1" 
                 role="dialog" 
                 aria-hidden="true" 
                 id={"#portfolioModal" + this.props.number}
-                style={{ display: ((this.props.isOpen == this.props.number) ? "block" : "none")}}>
+                style={{ display: ((this.props.isOpen === this.props.number) ? "block" : "none")}}>
             <div className="modal-dialog">
               <div className="modal-content">
                 <div className="close-modal" onClick={this.props.closeButton}>
@@ -52,10 +52,10 @@ class GalleryModal extends React.Component {
                       <div className="modal-body">
                         <h2>{this.props.title}</h2>
                         <p className="item-intro text-muted">{this.props.org}</p>
-                        <a href={this.props.link} target="_blank">
+                        <a href={this.props.link} target="_blank" rel="noopener noreferrer">
                         <img className="img-fluid d-block mx-auto" src={this.props.imageURL} alt=""/> </a>
                         <p align="left">{this.props.p1}</p>
-                        <a href={this.props.link} target="_blank" className="tool-link">
+                        <a href={this.props.link} target="_blank" rel="noopener noreferrer" className="tool-link">
                           <button className="btn btn-primary">Go to {this.props.title}</button>
                         </a>
                         <button className="btn btn-primary" type="button" onClick={this.props.closeButton}>

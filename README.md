@@ -8,5 +8,10 @@ gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
 
 Or [view the live demo here](https://gatsby-starter-hello-world-demo.netlify.com/).
 
+## Prerequisites
+`npm install -g yarn`
+
 ## Running in development
+
 `gatsby develop`
+

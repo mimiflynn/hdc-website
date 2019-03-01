@@ -67,7 +67,7 @@ const App = () =>
               <div className="col-md-4">
                 <ul className="list-inline quicklinks">
                   <li className="list-inline-item">
-                    Adapted from <a href="https://startbootstrap.com/template-overviews/agency/" target="_blank">Agency Theme</a>
+                    Adapted from <a href="https://startbootstrap.com/template-overviews/agency/" target="_blank" rel="noopener noreferrer">Agency Theme</a>
                   </li>
                 </ul>
               </div>
